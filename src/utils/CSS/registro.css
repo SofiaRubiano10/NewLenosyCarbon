@@ -1,0 +1,31 @@
+ #mesa, #mesero{ 
+    font-family: "RobotoBold";
+    text-align: center;
+    margin-left: 10%;
+    height: 50px;
+    width: 300px;
+    border-radius: 12px;
+    border-color: black;
+    font-size: 40px;
+    text-indent:  0.25in;
+    /* box-shadow: 7px 8px 8px 5px rgba(0,0,0,0.98); */
+}
+.desple{
+    display: flex;
+    border: solid 1px beige;
+    position: relative;
+    text-align-last: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.ocupadas{
+    border-radius: 10%;
+    width: 200px;
+    height: 200px;
+    background-color: #FFFF;
+    font-family: "RobotoBold";
+    padding: 10px;
+    margin-left: 7%;
+    font-size:x-large;
+}
