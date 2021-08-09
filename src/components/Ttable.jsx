@@ -1,12 +1,12 @@
 import React from 'react'
 // importacion estilos CSS
-import '../utils/CSS/registro.css'
+import '../utils/CSS/table.css'
 // importacion de links 
 // import {Link} from 'react-router-dom'
 
-export const Registro = () => {
+export const Ttable = () => {
     let mesa =[{nombre:"MESA 1", estado:"ocupada"}, {nombre:"MESA 2", estado:"ocupada"}, {nombre:"MESA 3", estado:"vacia"}, {nombre:"MESA 4", estado:"vacia"}, {nombre:"MESA 5", estado:"vacia"}, {nombre:"MESA 6", estado:"vacia"},];
-    let mesero =["JUANITO", "JUANITE", "JUANITA"];
+    // let mesero =["JUANITO", "JUANITE", "JUANITA"];
     return (
         <div className="superPrincipal">
 
@@ -20,14 +20,14 @@ export const Registro = () => {
                             )
                         })}
                     </select>
-                    <select name="mesero" id="mesero">
+                    {/* <select name="mesero" id="mesero">
                         <option value="">MESERO</option>
                         {mesero && mesero.map((element,index)=>{
                             return(
                                 <option value={index+1}>{element}</option>
                             )
                         })}
-                    </select>
+                    </select> */}
                     <div className="ocupadas">
                         {mesa && mesa.filter(element=>element.estado != "vacia").map((element,index)=>{
                             console.log(element.estado === "ocupada")
@@ -53,4 +53,6 @@ export const Registro = () => {
     )
 }
 
-export default Registro;
+export default Ttable;
+
+// TODO: hacer que el estado de las mesas cambie con los botones NO OLVIDAR 

@@ -2,6 +2,36 @@
     src: url(../fuentes/Roboto-BoldCondensed.woff);
     font-family: 'RobotoBold';
 }
+@font-face{
+    src: url(../fuentes/Roboto-Regular.woff);
+    font-family: 'RobotoRegular';
+}
+@font-face{
+    src: url(../fuentes/Roboto-Thin.woff);
+    font-family: 'RobotoThin';
+}
+
+#seconde{
+    border: solid 1px white;
+    justify-content: center;
+    margin-left: auto ;
+    margin-right: auto;
+    position: relative;
+    text-align-last: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    
+}
+#miniconte{
+    background-color: #a1776c8f;
+    border-radius: 10px;
+    border: #EC6E21 2px solid;
+    width: 40%;
+    margin-left: auto ;
+    margin-right: auto;
+}
 
 .superPrincipal{
     display: flex;
@@ -13,7 +43,6 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: blueviolet 1px solid;
 }
 
     #boton1, #boton2{
@@ -25,7 +54,6 @@
     }
     #boton2{
         margin-top: 20px;
-        border: solid 1px slateblue;
     }
 button{
     background-color:#EC6E21;
@@ -41,3 +69,87 @@ button{
 #iniciar{
     width: 350px;
 }
+#signin{
+    width: 100%;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'RobotoBold';
+}
+
+.login {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 20px;
+    background: #451A11;
+    display: flex;
+}
+
+.login .loginContainer {
+    border-radius: 10px;
+    border: solid 2px #EC6E21;
+    padding: 60px;
+    margin: auto;
+    width: 100%;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #643831;
+    box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
+}
+
+.login .loginContainer label {
+    color: white;
+    margin: 5px 0;
+    display: block;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.login .loginContainer input {
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.login .loginContainer .btnContainer {
+    width: 100%;
+    padding: 24px 0;
+}
+
+.login .loginContainer .btnContainer p {
+    margin: 14px 0 0 0;
+    text-align: right;
+    color: #fff;
+    font-family: 'RobotoThin';
+}
+
+.login .loginContainer .btnContainer p span {
+    color: #EC6E21;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+
+.login .loginContainer .btnContainer p span:hover {
+    color: #fff;
+}
+
+.login .loginContainer .errorMsg {
+    color: #fff;
+    font-size: 16px;
+}
+

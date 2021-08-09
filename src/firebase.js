@@ -1,17 +1,15 @@
- import firebase from 'firebase/app'
-import 'firebase/firestore';
+import firebase from 'firebase'
+
+var firebaseConfig = {
+  apiKey: "AIzaSyDlC8y1defDykhCfk8Ohu38QxRdGAu2WKE",
+  authDomain: "newlenosycarbon.firebaseapp.com",
+  projectId: "newlenosycarbon",
+  storageBucket: "newlenosycarbon.appspot.com",
+  messagingSenderId: "536365325196",
+  appId: "1:536365325196:web:6022f9d508fe7e238454a9"
+};
 
 
- // Your web app's Firebase configuration
- var firebaseConfig = {
-    apiKey: "AIzaSyCEl-kwRrxaK9hgxdOznLsAWS8BDt0sHK0",
-    authDomain: "lenosycarbonn.firebaseapp.com",
-    projectId: "lenosycarbonn",
-    storageBucket: "lenosycarbonn.appspot.com",
-    messagingSenderId: "29370698729",
-    appId: "1:29370698729:web:77e97d295a8cdc6e675978"
-  };
-  // Initialize Firebase
- const fb = firebase.initializeApp(firebaseConfig);
+  const fire = firebase.initializeApp (firebaseConfig);
 
- export const db = fb.firestore ();
+export default fire;
