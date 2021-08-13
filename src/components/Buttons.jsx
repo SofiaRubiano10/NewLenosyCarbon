@@ -38,41 +38,41 @@ const Buttons = () => {
 
                 </div>
                 <div>
-                    <button className="bmenu">PRUEBA</button>
+                    <button className="bmenu">BEBIDAS</button>
                 </div>
                 <div>
-                    <button className="bmenu">PRUEBA</button>
+                    <button className="bmenu">CÓCTELES</button>
 
                 </div>
                 <div>
-                    <button className="bmenu">PRUEBA</button>
+                    <button className="bmenu">LICORES</button>
                 </div>
                 <div>
-                    <button className="bmenu">PRUEBA</button>
+                    <button className="bmenu">VINOS</button>
                 </div>
                 <div>
-                    <button className="bmenu">PRUEBA</button>
+                    <button className="bmenu">DESAYUNOS</button>
                 </div>
                 <div>
-                    <button className="bmenu">PRUEBA</button>
+                    <button className="bmenu">JUGOS </button>
                 </div>
                 <div>
-                    <button className="bmenu">PRUEBA</button>
+                    <button className="bmenu">CARNES CASA</button>
                 </div>
             </section>
 
             <section className="twoButtons">
                 <div>
-                    <button className="bmenuB">PRUEBA</button>
+                    <button className="bmenuB">ENSALADAS Y SOPAS</button>
                 </div>
                 <div>
-                    <button className="bmenuB">PRUEBA</button>
+                    <button className="bmenuB">OTRAS OPCIONES</button>
                 </div>
                 <div>
-                    <button className="bmenuB">PRUEBA</button>
+                    <button className="bmenuB">BEBIDAS CALIENTES</button>
                 </div>
                 <div>
-                    <button className="bmenuB">PRUEBA</button>
+                    <button className="bmenuB">KITS PARRILLEROS</button>
                 </div>
 
             </section>
