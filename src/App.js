@@ -1,14 +1,15 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import fire from './firebase'
-import Links from './components/Links';
-import LinkForm from './components/LinkForm';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import Home from './pages/Home/Home'
 import Table from './pages/Table/Table';
+import Menu from './pages/Menu/Menu'
 
 
-const App = () => {
+function App () {
+
+  // LOGIN SECTION
   const [user, setUSer] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -104,8 +105,8 @@ const App = () => {
         passwordError={passwordError}
          />
          <Table/>
-      {/* <LinkForm/>
-      <Links/> */}
+         <Menu/>
+        
     </>
 
   );

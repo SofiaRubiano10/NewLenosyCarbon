@@ -1,0 +1,48 @@
+.threeButtons{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.twoButtons{ 
+    margin-top: 15px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.bmenu{
+    background-color: #fff;
+    color: black;
+    width: 300px;
+    text-align: center;
+}
+.bmenuB{
+    background-color: #fff;
+    color: black;
+    width: 500px;
+    text-align: left;
+}
+
+/* responsive */
+@media screen and (min-width:375px) and (max-width:420px) {
+    .threeButtons, .twoButtons{
+        grid-template-columns: 1fr;
+    } 
+}
+
+@media screen and (min-width:421px) and (max-width:800px) {
+    .threeButtons, .twoButtons{
+        grid-template-columns: 1fr;
+    } 
+}
