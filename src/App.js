@@ -2,9 +2,10 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import fire from './firebase'
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
-import Home from './pages/Home/Home'
 import Table from './pages/Table/Table';
 import Menu from './pages/Menu/Menu'
+import Login from './components//Login/Login'
+import { Cabecera } from './components';
 
 
 function App () {
@@ -87,12 +88,14 @@ function App () {
   return (
     <>
       <Router>
+        <Cabecera/>
         <Switch>
-          {/* <Route path="/" exact component={Home}/> */}
+          <Route path="/" exact component={Login}/>
           <Route path="/table" exact component={Table}/>
+          <Route path="/menu" component={Menu}/>
         </Switch>
       </Router>
-      <Home 
+      {/* <Home 
         email={email} 
         setEmail={setEmail} 
         password={password} 
@@ -103,10 +106,7 @@ function App () {
         setHasAccount={setHasAccount}
         emailError={emailError}
         passwordError={passwordError}
-         />
-         <Table/>
-         <Menu/>
-        
+         /> */}
     </>
 
   );
