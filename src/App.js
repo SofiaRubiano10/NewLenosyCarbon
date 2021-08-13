@@ -80,9 +80,9 @@ function App () {
     });
   };
 
-  useEffect(() => {
-    authListener();
-  },[])
+  // useEffect(() => {
+  //   authListener();
+  // },[])
 
 
   return (
@@ -90,7 +90,19 @@ function App () {
       <Router>
         <Cabecera/>
         <Switch>
-          <Route path="/" exact component={Login}/>
+          <Route path="/" exact>
+            <Login email
+                  setEmail
+                  password
+                  setPassword 
+                  handleLogin 
+                  handleSignup 
+                  hasAccount 
+                  setHasAccount 
+                  emailError 
+                  passwordError/>
+          </Route>
+          {/* <Route path="/" exact component={Login}/> */}
           <Route path="/table" exact component={Table}/>
           <Route path="/menu" component={Menu}/>
         </Switch>
