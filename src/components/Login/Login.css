@@ -1,15 +1,15 @@
-/* @font-face{
-    src: url(../fuentes/Roboto-BoldCondensed.woff);
+@font-face{
+    src: url(../../utils/fuentes/Roboto-BoldCondensed.woff);
     font-family: 'RobotoBold';
 }
 @font-face{
-    src: url(../fuentes/Roboto-Regular.woff);
+    src: url(../../utils/fuentes/Roboto-Regular.woff);
     font-family: 'RobotoRegular';
 }
 @font-face{
-    src: url(../fuentes/Roboto-Thin.woff);
+    src: url(../../utils/fuentes/Roboto-Thin.woff);
     font-family: 'RobotoThin';
-} */
+}
 
 
 .superPrincipal{
