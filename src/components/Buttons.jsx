@@ -9,7 +9,14 @@ const Buttons = () => {
     const [active, setActive] = useState(false);
     const toggle = () =>{
         setActive(!active);
+        setTitle("gato")
+
     }
+    const toggle2 = () =>{
+        setActive(!active);
+        setTitle("perro")
+    }
+    const [titleModal, setTitle] = useState("")
 
 
     return (
@@ -17,18 +24,18 @@ const Buttons = () => {
             <section className="threeButtons">
                 <div>
                     <button className="bmenu" onClick={toggle}>ENTRADAS</button>
-                    <Modal active={active} toggle={toggle}>
-                        <h1>PRUEBA</h1>
-                    </Modal>
+                    <Modal active={active} toggle={toggle} titleModal={"Carnes"} />
                 </div>
-                <div>
+
+                {/* <div>
                     <button className="bmenu"  onClick={toggle}>CARNES</button>
                     <Modal active={active} toggle={toggle}>
                         <h1>PRUEBA2</h1>
                     </Modal>
-                </div>
+                </div> */}
                 <div>
-                    <button className="bmenu">SÁNDWICH</button>
+                    <button className="bmenu" onClick={toggle2}>SÁNDWICH</button>
+                    <Modal active={active} toggle={toggle2} titleModal={titleModal} />
                 </div>
                 <div>
                     <button className="bmenu">PORCIONES</button>

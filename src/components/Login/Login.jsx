@@ -1,7 +1,6 @@
 import React from 'react'
 // importacion estilos CSS
-import '../utils/CSS/botonprin.css'
-// importacion de links 
+import './Login.css'
 import {Link} from 'react-router-dom'
 
 const Login = (props) =>{
@@ -42,15 +41,17 @@ const Login = (props) =>{
                         <>
                             <button onClick={handleLogin} id="signin">SIGN IN</button>
                             <p>
-                                ¿no tienes cuenta? 
+                                ¿no tienes cuenta?
                                 <span onClick={() => setHasAccount(!hasAccount)}>Sing Up</span>
                             </p>
                         </>
                     ) : (
                         <>
-                            <button onClick={handleSignup} id="signin">Sign up</button>
+                        <Link to="/table">
+                        <button onClick={handleSignup} id="signin">Sign up</button>
+                        </Link>
                             <p>
-                                Have an account? 
+                                Have an account?
                                 <span onClick={() => setHasAccount(!hasAccount)}>Sign in</span>
                             </p>
                         </>

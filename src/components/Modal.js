@@ -4,7 +4,7 @@ import "../utils/CSS/modal.css"
 
 export default class Modal extends Component{
     render() {
-        const { children, toggle, active } = this.props;
+        const { children, toggle, active, titleModal } = this.props;
 
         return (
             <Portal>
@@ -12,7 +12,10 @@ export default class Modal extends Component{
                     <div className="wrapperMo">
                         <div className="window">
                             <button className="closeBtn" onClick={toggle}>X</button>
-                            <div>{children}</div>
+                            <div>
+                                <h1>{titleModal}</h1>
+                            </div>
+
                         </div>
 
                     </div>

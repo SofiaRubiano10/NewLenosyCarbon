@@ -4,7 +4,6 @@ import {Cabecera, Ttable} from "../../components/"
 const Table = () => {
     return (
         <>
-            <Cabecera/>
             <Ttable/>
         </>
     )
