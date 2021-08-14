@@ -10,20 +10,23 @@
 }
 .window{
     position: relative;
-    background-color: #ffff;
-    border: solid 2px #EC6E21;
+    background-color: #f3f2f2;
+    border: solid 4px #EC6E21;
     border-radius: 10px;
     padding: 15px;
     z-index: 10;
-    min-width: 90vh;
+    min-width: 100vh;
     color: black;
 }
 .closeBtn{
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
 }
 .info{
+    padding-top: 7px;
+    padding-bottom: 7px;
     display: flex;
 }
 .nombre {
@@ -35,12 +38,3 @@
 .thin{
     font-family: 'RobotoThin';
 }
- .background{
-     position: absolute;
-     width: 100%;
-     height: 100%;
-     top: 0px;
-     left: 0px;
-     background: black;
-     opacity: 0.4;
- }

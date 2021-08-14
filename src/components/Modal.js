@@ -26,13 +26,10 @@ import { db } from '../firebase';
                                         <div className="precio">
                                             <h2 className="thin">${e.precio}</h2>
                                         </div>
-                                        
                                     </div>
-
                                 )
                             })}
                         </div>
-                        <div className="backgroud" onClick={toggle}/>
 
                     </div>
 
