@@ -2,8 +2,9 @@ import React, { useState, useEffect} from 'react'
 import "../utils/CSS/buttons.css"
 import Modal from './Modal'
 import { db } from '../firebase';
+import Prod from '../utils/imagenes/pro.png'
+import {Link} from 'react-router-dom'
 import { render } from '@testing-library/react'
-
 
 const Buttons = () => {
     //CONSTANS DECLARATION
@@ -121,6 +122,9 @@ const Buttons = () => {
 
     return (
         <div className="contePrincipalA">
+            <div className="tiPro">
+                <img src={Prod} alt="es Prod"/>
+            </div>
             <section className="threeButtons">
                 <div>
                     <button className="bmenu"  onClick={toggle1}>ENTRADAS</button>
@@ -195,7 +199,13 @@ const Buttons = () => {
                 </div>
 
             </section>
-
+             <section className="oneButton">
+                <div id="boton2">
+                    <Link to="/table">
+                        <button type="button" id="sig">VOLVER A MESAS</button>
+                    </Link>
+                </div>  
+             </section>
         </div>
     )
 }

@@ -20,14 +20,7 @@ export const Ttable = () => {
                             )
                         })}
                     </select>
-                    {/* <select name="mesero" id="mesero">
-                        <option value="">MESERO</option>
-                        {mesero && mesero.map((element,index)=>{
-                            return(
-                                <option value={index+1}>{element}</option>
-                            )
-                        })}
-                    </select> */}
+                    
                     <div className="ocupadas">
                         {mesa && mesa.filter(element=>element.estado != "vacia").map((element,index)=>{
                             console.log(element.estado === "ocupada")
@@ -40,10 +33,15 @@ export const Ttable = () => {
                 
 
                 <div id="boton2">
-                <Link to="/menu">
-                    <button type="button" id="sig">SIGUIENTE</button>
-                </Link>
-                </div>               
+                    <Link to="/menu">
+                        <button type="button" id="sig">SIGUIENTE</button>
+                    </Link>
+                </div> 
+                <div id="boton2">
+                    <Link to="/">
+                        <button type="button" id="sig">VOLVER A CUENTA</button>
+                    </Link>
+                </div>                
 
             </div>
         </div>
