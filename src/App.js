@@ -106,19 +106,6 @@ const App = () => {
               emailError={emailError}
               passwordError={passwordError}/>
           </Route>
-          <Route path="/">
-          <Login 
-              email={email} 
-              setEmail={setEmail} 
-              password={password} 
-              setPassword={setPassword} 
-              handleLogin={handleLogin}
-              handleSignup={handleSignup}
-              hasAccount={hasAccount}
-              setHasAccount={setHasAccount}
-              emailError={emailError}
-              passwordError={passwordError}/>
-          </Route>
           <Route path="/table" exact component={Table}/>
           <Route path="/menu" component={Menu}/>
         </Switch>
