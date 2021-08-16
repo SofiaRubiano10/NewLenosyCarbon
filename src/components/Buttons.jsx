@@ -1,7 +1,8 @@
 import React, { useState, useEffect} from 'react'
 import "../utils/CSS/buttons.css"
 import Modal from './Modal'
-import { db } from '../firebase';
+import { db } from '../fire';
+//importar imagenes
 import Prod from '../utils/imagenes/pro.png'
 import {Link} from 'react-router-dom'
 import { render } from '@testing-library/react'

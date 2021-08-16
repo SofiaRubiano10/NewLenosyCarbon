@@ -40,17 +40,17 @@ const Login = (props) =>{
                     {hasAccount ? (
                         <>
                             <Link to="/table">
-                                <button onClick={handleLogin} id="signin">SIGN IN</button>
+                                <button onClick={handleLogin} id="signin">Sign in</button>
                             </Link>
                             <p>
-                                ¿no tienes cuenta?
+                                Don´t have an account?
                                 <span onClick={() => setHasAccount(!hasAccount)}>Sing Up</span>
                             </p>
                         </>
                     ) : (
                         <>
                         <Link to="/table">
-                        <button onClick={handleSignup} id="signin">Sign up</button>
+                            <button onClick={handleSignup} id="signin">Sign up</button>
                         </Link>
                             <p>
                                 Have an account?

@@ -17,7 +17,7 @@
     margin-right: auto;
     position: relative;
     text-align-last: center;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }

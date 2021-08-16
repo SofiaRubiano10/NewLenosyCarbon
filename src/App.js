@@ -1,14 +1,16 @@
+//IMPORTS 
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import fire from './firebase'
+import fire from './fire';
+import 'firebase/auth'
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import Table from './pages/Table/Table';
 import Menu from './pages/Menu/Menu'
-import Login from './components//Login/Login'
+import Login from './components/Login/Login'
 import { Cabecera } from './components';
 
 
-function App () {
+const App = () => {
 
   // LOGIN SECTION
   const [user, setUSer] = useState('');
@@ -16,7 +18,7 @@ function App () {
   const [password, setPassword] = useState('');
   const [emailError, setEmailError] = useState('');
   const [passwordError, setPasswordError] = useState('');
-  const [hasAccount, setHasAccount] = useState (false);
+  const [hasAccount, setHasAccount] = useState(false);
 
   const clearInputs = () =>{
     setEmail('');
@@ -28,13 +30,13 @@ function App () {
     setPasswordError('');
   }
 
-  const handleLogin =() => {
+  const handleLogin = () => {
     clearErrors();
-    fire 
+    fire
       .auth()
       .signInWithEmailAndPassword(email, password)
-      .catch(err => {
-        switch (err.code){
+      .catch((err) => {
+        switch(err.code) {
           case "auth/invalid-email":
           case "auth/user-disabled":
           case "auth/user-not-found":
@@ -49,11 +51,11 @@ function App () {
 
   const handleSignup = () => {
     clearErrors();
-    fire 
+    fire
       .auth()
       .createUserWithEmailAndPassword(email, password)
-      .catch(err => {
-        switch (err.code){
+      .catch((err) => {
+        switch(err.code) {
           case "auth/email-already-in-use":
           case "auth/invalid-email":
             setEmailError(err.message);
@@ -74,51 +76,40 @@ function App () {
       if(user){
         clearInputs();
         setUSer(user);
-      } else{
+      } else {
         setUSer("");
       }
     });
   };
 
-  // useEffect(() => {
-  //   authListener();
-  // },[])
+  useEffect(() => {
+    authListener();
+  },[])
 
 
   return (
     <>
+
       <Router>
         <Cabecera/>
         <Switch>
           <Route path="/" exact>
-            <Login email
-                  setEmail
-                  password
-                  setPassword 
-                  handleLogin 
-                  handleSignup 
-                  hasAccount 
-                  setHasAccount 
-                  emailError 
-                  passwordError/>
+            <Login 
+              email={email} 
+              setEmail={setEmail} 
+              password={password} 
+              setPassword={setPassword} 
+              handleLogin={handleLogin}
+              handleSignup={handleSignup}
+              hasAccount={hasAccount}
+              setHasAccount={setHasAccount}
+              emailError={emailError}
+              passwordError={passwordError}/>
           </Route>
-          {/* <Route path="/" exact component={Login}/> */}
           <Route path="/table" exact component={Table}/>
           <Route path="/menu" component={Menu}/>
         </Switch>
       </Router>
-      {/* <Home 
-        email={email} 
-        setEmail={setEmail} 
-        password={password} 
-        setPassword={setPassword} 
-        handleLogin={handleLogin}
-        handleSignup={handleSignup}
-        hasAccount={hasAccount}
-        setHasAccount={setHasAccount}
-        emailError={emailError}
-        passwordError={passwordError}
-         /> */}
     </>
 
   );
