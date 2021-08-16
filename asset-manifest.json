@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/NewLenosyCarbon/static/css/main.ceaebc0e.chunk.css",
-    "main.js": "/NewLenosyCarbon/static/js/main.436c7f16.chunk.js",
-    "main.js.map": "/NewLenosyCarbon/static/js/main.436c7f16.chunk.js.map",
+    "main.js": "/NewLenosyCarbon/static/js/main.693f8ed6.chunk.js",
+    "main.js.map": "/NewLenosyCarbon/static/js/main.693f8ed6.chunk.js.map",
     "runtime-main.js": "/NewLenosyCarbon/static/js/runtime-main.af1818a8.js",
     "runtime-main.js.map": "/NewLenosyCarbon/static/js/runtime-main.af1818a8.js.map",
     "static/js/2.019e7b96.chunk.js": "/NewLenosyCarbon/static/js/2.019e7b96.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.af1818a8.js",
     "static/js/2.019e7b96.chunk.js",
     "static/css/main.ceaebc0e.chunk.css",
-    "static/js/main.436c7f16.chunk.js"
+    "static/js/main.693f8ed6.chunk.js"
   ]
 }
