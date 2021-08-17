@@ -89,11 +89,10 @@ const App = () => {
 
   return (
     <>
-
       <Router>
         <Cabecera/>
         <Switch>
-          <Route path="/" exact>
+          <Route path="/" exact >
             <Login 
               email={email} 
               setEmail={setEmail} 

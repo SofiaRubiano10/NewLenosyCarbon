@@ -13,5 +13,6 @@ A list of technologies used within the project:
 * [CSS]
 
 ## COLLABORATION
-* [Sofía Rubiano](https://github.com/SofiaRubiano10)
 * Theachers and mentors 
+* Classmates 
+* [Sofía Rubiano](https://github.com/SofiaRubiano10)
