@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/NewLenosyCarbon/static/css/main.ceaebc0e.chunk.css",
-    "main.js": "/NewLenosyCarbon/static/js/main.e8810ae9.chunk.js",
-    "main.js.map": "/NewLenosyCarbon/static/js/main.e8810ae9.chunk.js.map",
+    "main.css": "/NewLenosyCarbon/static/css/main.ceea01a4.chunk.css",
+    "main.js": "/NewLenosyCarbon/static/js/main.436c7f16.chunk.js",
+    "main.js.map": "/NewLenosyCarbon/static/js/main.436c7f16.chunk.js.map",
     "runtime-main.js": "/NewLenosyCarbon/static/js/runtime-main.af1818a8.js",
     "runtime-main.js.map": "/NewLenosyCarbon/static/js/runtime-main.af1818a8.js.map",
     "static/js/2.019e7b96.chunk.js": "/NewLenosyCarbon/static/js/2.019e7b96.chunk.js",
     "static/js/2.019e7b96.chunk.js.map": "/NewLenosyCarbon/static/js/2.019e7b96.chunk.js.map",
     "index.html": "/NewLenosyCarbon/index.html",
-    "static/css/main.ceaebc0e.chunk.css.map": "/NewLenosyCarbon/static/css/main.ceaebc0e.chunk.css.map",
+    "static/css/main.ceea01a4.chunk.css.map": "/NewLenosyCarbon/static/css/main.ceea01a4.chunk.css.map",
     "static/js/2.019e7b96.chunk.js.LICENSE.txt": "/NewLenosyCarbon/static/js/2.019e7b96.chunk.js.LICENSE.txt",
     "static/media/LogoLenosHeader.b8b67295.png": "/NewLenosyCarbon/static/media/LogoLenosHeader.b8b67295.png",
     "static/media/Login.css": "/NewLenosyCarbon/static/media/Roboto-Thin.d898db90.woff",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.af1818a8.js",
     "static/js/2.019e7b96.chunk.js",
-    "static/css/main.ceaebc0e.chunk.css",
-    "static/js/main.e8810ae9.chunk.js"
+    "static/css/main.ceea01a4.chunk.css",
+    "static/js/main.436c7f16.chunk.js"
   ]
 }
