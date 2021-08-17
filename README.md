@@ -8,7 +8,7 @@ At this time, the project is not completely finished, since later and with other
 ## TECHNOLOGIES 
 
 A list of technologies used within the project:
-* [React](https://es.reactjs.org/): Version ^17.0.2
+* [React](https://es.reactjs.org/): Version ^17.0.2. 
 * [Firebase](https://firebase.google.com/?hl=es): Version ^8.8.0
 * [CSS]
 
